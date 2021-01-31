@@ -1,0 +1,12 @@
+/*
+    1. 网易云音乐外链过渡效果
+*/
+.music {
+    width: 280px;
+    height: 100px;
+    overflow: hidden;
+    transform: height 4s;
+}
+.music:hover {
+   height: 320px;
+}
