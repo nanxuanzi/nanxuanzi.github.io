@@ -78,7 +78,7 @@
    查找文件类型：pdf
 
    ```
-   filetpe:pdf java
+   filetype:pdf java
    ```
 
    
