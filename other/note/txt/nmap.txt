@@ -1,23 +1,23 @@
-//°æ±¾
+//ç‰ˆæœ¬
 Nmap 7.70 ( https://nmap.org ) 
 
-//nmap [É¨ÃèÀàĞÍ] [Ñ¡Ïî] Ä¿±ê
+//ç”¨æ³•ï¼šnmap [æ‰«æç±»å‹] [é€‰é¡¹] ç›®æ ‡
 Usage: nmap [Scan Type(s)] [Options] {target specification}
 
-//Ä¿±ê¹æ¸ñ
+//ç›®æ ‡è§„æ ¼
 TARGET SPECIFICATION:
-  //¿ÉÒÔ´«µİÖ÷»úÃû¡¢IP µØÖ·¡¢ÍøÂçµÈ¡£					
+  //å¯ä»¥ä¼ é€’ä¸»æœºåã€IP åœ°å€ã€ç½‘ç»œç­‰ã€‚					
   Can pass hostnames, IP addresses, networks, etc.
   
-  //ÀıÈç£ºscanme.nmap.org...
-  Ex: , microsoft.com/24, 192.168.0.1; 10.0.0-255.1-254
+  //ä¾‹å¦‚ï¼šscanme.nmap.org...
+  Ex: scanme.nmap.org, microsoft.com/24, 192.168.0.1; 10.0.0-255.1-254
 
   -iL <inputfilename>: Input from list of hosts/networks
   -iR <num hosts>: Choose random targetss
   --exclude <host1[,host2][,host3],...>: Exclude hosts/networks
   --excludefile <exclude_file>: Exclude list from file
 
-//Ö÷»ú·¢ÏÖ
+//ä¸»æœºå‘ç°
 HOST DISCOVERY:
   -sL: List Scan - simply list targets to scan
   -sn: Ping Scan - disable port scan
@@ -30,7 +30,7 @@ HOST DISCOVERY:
   --system-dns: Use OS's DNS resolver
   --traceroute: Trace hop path to each host
 
-//É¨Ãè¼¼Êõ
+//æ‰«ææŠ€æœ¯
 SCAN TECHNIQUES:
   -sS/sT/sA/sW/sM: TCP SYN/Connect()/ACK/Window/Maimon scans
   -sU: UDP Scan
@@ -41,7 +41,7 @@ SCAN TECHNIQUES:
   -sO: IP protocol scan
   -b <FTP relay host>: FTP bounce scan
 
-//¶Ë¿Ú¹æ¸ñºÍÉ¨ÃèË³Ğò
+//ç«¯å£è§„æ ¼å’Œæ‰«æé¡ºåº
 PORT SPECIFICATION AND SCAN ORDER:
   -p <port ranges>: Only scan specified ports
     Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9
@@ -51,7 +51,7 @@ PORT SPECIFICATION AND SCAN ORDER:
   --top-ports <number>: Scan <number> most common ports
   --port-ratio <ratio>: Scan ports more common than <ratio>
 
-//·şÎñ/°æ±¾¼ì²â£º 
+//æœåŠ¡/ç‰ˆæœ¬æ£€æµ‹ï¼š 
 SERVICE/VERSION DETECTION:
   -sV: Probe open ports to determine service/version info
   --version-intensity <level>: Set from 0 (light) to 9 (try all probes)
@@ -59,7 +59,7 @@ SERVICE/VERSION DETECTION:
   --version-all: Try every single probe (intensity 9)
   --version-trace: Show detailed version scan activity (for debugging)
 
-//½Å±¾É¨Ãè 
+//è„šæœ¬æ‰«æ 
 SCRIPT SCAN:
   -sC: equivalent to --script=default
   --script=<Lua scripts>: <Lua scripts> is a comma separated list of
@@ -72,19 +72,19 @@ SCRIPT SCAN:
            <Lua scripts> is a comma-separated list of script-files or
            script-categories.
 
-//²Ù×÷ÏµÍ³¼ì²â
+//æ“ä½œç³»ç»Ÿæ£€æµ‹
 OS DETECTION:
   -O: Enable OS detection
   --osscan-limit: Limit OS detection to promising targets
   --osscan-guess: Guess OS more aggressively
 
-//Ê±¼äºÍĞÔÄÜ
+//æ—¶é—´å’Œæ€§èƒ½
 TIMING AND PERFORMANCE:
-	//ĞèÒª <time> µÄÑ¡ÏîÒÔÃëÎªµ¥Î»£¬»ò¸½¼Ó 'ms'£¨ºÁÃë£©£¬'s'£¨Ãë£©¡¢'m'£¨·ÖÖÓ£©»ò 'h'£¨Ğ¡Ê±£©µ½Öµ£¨ÀıÈç 30m£©¡£
+	//éœ€è¦ <time> çš„é€‰é¡¹ä»¥ç§’ä¸ºå•ä½ï¼Œæˆ–é™„åŠ  'ms'ï¼ˆæ¯«ç§’ï¼‰ï¼Œ's'ï¼ˆç§’ï¼‰ã€'m'ï¼ˆåˆ†é’Ÿï¼‰æˆ– 'h'ï¼ˆå°æ—¶ï¼‰åˆ°å€¼ï¼ˆä¾‹å¦‚ 30mï¼‰ã€‚
 	Options which take <time> are in seconds, or append 'ms' (milliseconds),
 	's' (seconds), 'm' (minutes), or 'h' (hours) to the value (e.g. 30m).
   
-	//ÉèÖÃ¼ÆÊ±Ä£°å£¨Ô½¸ßÔ½¿ì£©
+	//è®¾ç½®è®¡æ—¶æ¨¡æ¿ï¼ˆè¶Šé«˜è¶Šå¿«ï¼‰
 	-T<0-5>: Set timing template (higher is faster)
   
   --min-hostgroup/max-hostgroup <size>: Parallel host scan group sizes
@@ -97,7 +97,7 @@ TIMING AND PERFORMANCE:
   --min-rate <number>: Send packets no slower than <number> per second
   --max-rate <number>: Send packets no faster than <number> per second
 
-//·À»ğÇ½/IDS ÌÓ±ÜºÍÆÛÆ­
+//é˜²ç«å¢™/IDS é€ƒé¿å’Œæ¬ºéª—
 FIREWALL/IDS EVASION AND SPOOFING:
   -f; --mtu <val>: fragment packets (optionally w/given MTU)
   -D <decoy1,decoy2[,ME],...>: Cloak a scan with decoys
@@ -113,7 +113,7 @@ FIREWALL/IDS EVASION AND SPOOFING:
   --spoof-mac <mac address/prefix/vendor name>: Spoof your MAC address
   --badsum: Send packets with a bogus TCP/UDP/SCTP checksum
 
-//Êä³ö
+//è¾“å‡º
 OUTPUT:
   -oN/-oX/-oS/-oG <file>: Output scan in normal, XML, s|<rIpt kIddi3,
      and Grepable format, respectively, to the given filename.
@@ -130,11 +130,12 @@ OUTPUT:
   --webxml: Reference stylesheet from Nmap.Org for more portable XML
   --no-stylesheet: Prevent associating of XSL stylesheet w/XML output
 
-//ÔÓÏî 
+//æ‚é¡¹ 
 MISC:
-	//ÆôÓÃ ipv6É¨Ãè
+	//å¯ç”¨ ipv6æ‰«æ
   -6: Enable IPv6 scanning
-  //ÆôÓÃ ²Ù×÷ÏµÍ³¼ì²â¡¢°æ±¾¼ì²â¡¢½Å±¾É¨ÃèºÍ¸ú×ÙÂ·ÓÉ
+  
+  //å¯ç”¨ æ“ä½œç³»ç»Ÿæ£€æµ‹ã€ç‰ˆæœ¬æ£€æµ‹ã€è„šæœ¬æ‰«æå’Œè·Ÿè¸ªè·¯ç”±
   -A: Enable OS detection, version detection, script scanning, and traceroute
   
   --datadir <dirname>: Specify custom Nmap data file location
@@ -142,11 +143,11 @@ MISC:
   --privileged: Assume that the user is fully privileged
   --unprivileged: Assume the user lacks raw socket privileges
   
-  //°æ±¾ĞÅÏ¢¡¢°ïÖú
+  //ç‰ˆæœ¬ä¿¡æ¯ã€å¸®åŠ©
   -V: Print version number
   -h: Print this help summary page.
  
-//Àı×Ó
+//ä¾‹å­
 EXAMPLES:
   nmap -v -A scanme.nmap.org
   nmap -v -sn 192.168.0.0/16 10.0.0.0/8
