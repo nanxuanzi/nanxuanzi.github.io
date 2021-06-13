@@ -1,0 +1,22 @@
+//版本、时间
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-06-10 09:47 CST
+
+//...的扫描报告
+Nmap scan report for baidu.com (220.181.38.148)
+
+//主机已 启动/关闭
+Host is up (0.035s latency).
+
+//...的其他地址（未扫描）
+Other addresses for baidu.com (not scanned): 39.156.69.79 110.242.68.134 220.181.33.31 112.80.248.64 14.215.178.80 180.76.76.92
+
+//未显示：998个 过滤 端口
+Not shown: 998 filtered ports
+
+//端口		状态		服务
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+//Nmap完成：..秒内扫描 1 个IP地址（1 个主机启动）
+Nmap done: 1 IP address (1 host up) scanned in 5.47 seconds
