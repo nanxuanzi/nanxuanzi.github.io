@@ -1,0 +1,19 @@
+{
+	//类型
+	"title":"常用",
+	//图标
+	"icon":"",
+	
+	//网站集合
+	"sites":[
+		{
+			"site":"url",
+			"icon":"url"
+		},
+		{
+			"site":"url",
+			"icon":"url"
+		},
+	]
+	
+}
