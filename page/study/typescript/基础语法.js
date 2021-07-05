@@ -6,7 +6,6 @@
     语句和表达式
     注释
 */
-
 //基础类型
 /**
  * 任意类型：any
@@ -16,30 +15,25 @@
  * 数组类型：{
  *     //元素后加上[]
  *     let arr: number[] = [1,2]
- * 
+ *
  *     //使用数组泛型
- *     let arr: Arrary<number> = [1,2] 
+ *     let arr: Arrary<number> = [1,2]
  *    }
  * ...
- * 
+ *
  */
-
 //Any类型
-let x:any = 1;
-console.log("Any类型：x="+x);
-
+var x = 1;
+console.log("Any类型：x=" + x);
 //数字类型，
-let num:number = 10086;
-console.log('数字类型：num='+num);
-
+var num = 10086;
+console.log('数字类型：num=' + num);
 //字符串类型
-let str:string = "This is string.";
-console.log('字符串类型：str='+str);
-
+var str = "This is string.";
+console.log('字符串类型：str=' + str);
 //布尔类型
-let bool:boolean = false;
-console.log("布尔类型：bool= "+bool);
-
+var bool = false;
+console.log("布尔类型：bool= " + bool);
 //数组类型
-let arr:number[] = [1,2,3]
-console.log("数组类型：arr= ")
+var arr = [1, 2, 3];
+console.log("数组类型：arr= ");
