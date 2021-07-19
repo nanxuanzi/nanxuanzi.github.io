@@ -10,10 +10,11 @@
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/nanxuanzi/nanxuanzi.github.io/favicon.ico" type="image/x-icon">
     <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js">
     </script>
+    <!---
     <script src="./js/images.js"></script>
     <script src="./js/info.js"></script>
     <script src="./js/imgTag.js"></script>
-    
+    -->
     
     <title>图床-github</title>
     <style>
@@ -108,7 +109,7 @@
             //打开Github项目仓库
             $("div#info h1").click(
                 function(){
-                    window.open("https://github.com/nanxuanzi/Images");
+                    window.open("https://github.com/nanxuanzi/nanxuanzi.github.io");
                 }
             );
             //打开Github个人信息
@@ -124,7 +125,7 @@
         //获取json对象
         $(function(){
             //get请求json https://cdn.jsdelivr.net/gh/nanxuanzi/Images@master
-            $.get('https://cdn.jsdelivr.net/gh/nanxuanzi/Images@master/json/Images.json',(data,status)=>{
+            $.get('https://cdn.jsdelivr.net/gh/nanxuanzi/nanxuanzi.github.io/json/Images.json',(data,status)=>{
                 if(status='success'){
                     console.log('请求json成功！')
                     //h data.img.h
